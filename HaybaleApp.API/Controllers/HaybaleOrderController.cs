@@ -1,10 +1,12 @@
 using HaybaleApp.Core.Entities;
 using HaybaleApp.Infrastructure.Persistence;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace HaybaleApp.API.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class HaybaleOrderController : ControllerBase
@@ -17,6 +19,7 @@ public class HaybaleOrderController : ControllerBase
     }
 
     // GET: api/haybaleorder
+    [Authorize(Roles = "Driver,Admin")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<HaybaleOrder>>> GetOrders()
     {
@@ -24,6 +27,7 @@ public class HaybaleOrderController : ControllerBase
     }
 
     // GET: api/haybaleorder/5
+    [Authorize(Roles = "Driver,Admin")]
     [HttpGet("{id}")]
     public async Task<ActionResult<HaybaleOrder>> GetOrder(int id)
     {
@@ -33,6 +37,7 @@ public class HaybaleOrderController : ControllerBase
     }
 
     // POST: api/haybaleorder
+    [Authorize(Roles = "Admin")]
     [HttpPost]
     public async Task<ActionResult<HaybaleOrder>> CreateOrder(HaybaleOrder order)
     {
@@ -43,6 +48,7 @@ public class HaybaleOrderController : ControllerBase
     }
 
     // PUT: api/haybaleorder/5
+    [Authorize(Roles = "Driver,Admin")]
     [HttpPut("{id}")]
 public async Task<IActionResult> UpdateOrder(int id, HaybaleOrder updated)
 {
@@ -79,6 +85,7 @@ public async Task<IActionResult> UpdateOrder(int id, HaybaleOrder updated)
 
 
     // DELETE: api/haybaleorder/5
+    [Authorize(Roles = "Admin")]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteOrder(int id)
     {
@@ -91,6 +98,7 @@ public async Task<IActionResult> UpdateOrder(int id, HaybaleOrder updated)
         return NoContent();
     }
 
+    [Authorize(Roles = "Admin")]
     private async Task LogChange(string action, string entity, string field, string? oldValue, string? newValue, string? notes = null)
     {
         var log = new ChangeLog

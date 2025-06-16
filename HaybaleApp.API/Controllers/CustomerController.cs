@@ -1,10 +1,12 @@
 using HaybaleApp.Core.Entities;
 using HaybaleApp.Infrastructure.Persistence;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace HaybaleApp.API.Controllers;
 
+[Authorize(Roles = "Admin")]
 [ApiController]
 [Route("api/[controller]")]
 public class CustomerController : ControllerBase
