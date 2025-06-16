@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.API\\HaybaleApp.API.csproj": {}
+    "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.API\\HaybaleApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.API\\HaybaleApp.API.csproj": {
+    "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.API\\HaybaleApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.API\\HaybaleApp.API.csproj",
+        "projectUniqueName": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.API\\HaybaleApp.API.csproj",
         "projectName": "HaybaleApp.API",
-        "projectPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.API\\HaybaleApp.API.csproj",
+        "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.API\\HaybaleApp.API.csproj",
         "packagesPath": "C:\\Users\\salee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.API\\obj\\",
+        "outputPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\salee\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,17 +26,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Application\\HaybaleApp.Application.csproj": {
-                "projectPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Application\\HaybaleApp.Application.csproj"
+              "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Application\\HaybaleApp.Application.csproj": {
+                "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Application\\HaybaleApp.Application.csproj"
               },
-              "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj": {
-                "projectPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj"
+              "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj": {
+                "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj"
               },
-              "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Infrastructure\\HaybaleApp.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Infrastructure\\HaybaleApp.Infrastructure.csproj"
+              "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Infrastructure\\HaybaleApp.Infrastructure.csproj": {
+                "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Infrastructure\\HaybaleApp.Infrastructure.csproj"
               },
-              "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj": {
-                "projectPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj"
+              "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj": {
+                "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Application\\HaybaleApp.Application.csproj": {
+    "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Application\\HaybaleApp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Application\\HaybaleApp.Application.csproj",
+        "projectUniqueName": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Application\\HaybaleApp.Application.csproj",
         "projectName": "HaybaleApp.Application",
-        "projectPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Application\\HaybaleApp.Application.csproj",
+        "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Application\\HaybaleApp.Application.csproj",
         "packagesPath": "C:\\Users\\salee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Application\\obj\\",
+        "outputPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\salee\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -146,14 +146,14 @@
         }
       }
     },
-    "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj": {
+    "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj",
+        "projectUniqueName": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj",
         "projectName": "HaybaleApp.Core",
-        "projectPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj",
+        "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj",
         "packagesPath": "C:\\Users\\salee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Core\\obj\\",
+        "outputPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\salee\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -204,14 +204,14 @@
         }
       }
     },
-    "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Infrastructure\\HaybaleApp.Infrastructure.csproj": {
+    "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Infrastructure\\HaybaleApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Infrastructure\\HaybaleApp.Infrastructure.csproj",
+        "projectUniqueName": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Infrastructure\\HaybaleApp.Infrastructure.csproj",
         "projectName": "HaybaleApp.Infrastructure",
-        "projectPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Infrastructure\\HaybaleApp.Infrastructure.csproj",
+        "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Infrastructure\\HaybaleApp.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\salee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Infrastructure\\obj\\",
+        "outputPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\salee\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -242,6 +242,22 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -262,14 +278,14 @@
         }
       }
     },
-    "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj": {
+    "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj",
+        "projectUniqueName": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj",
         "projectName": "HaybaleApp.Shared",
-        "projectPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj",
+        "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj",
         "packagesPath": "C:\\Users\\salee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Shared\\obj\\",
+        "outputPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\salee\\AppData\\Roaming\\NuGet\\NuGet.Config"

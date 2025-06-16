@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj",
+      "projectUniqueName": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj",
       "projectName": "HaybaleApp.Shared",
-      "projectPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj",
+      "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Shared\\HaybaleApp.Shared.csproj",
       "packagesPath": "C:\\Users\\salee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\salee\\Desktop\\HaybaleApp\\HaybaleApp.Shared\\obj\\",
+      "outputPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\salee\\AppData\\Roaming\\NuGet\\NuGet.Config"
