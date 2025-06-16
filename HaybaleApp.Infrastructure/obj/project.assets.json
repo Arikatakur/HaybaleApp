@@ -1595,6 +1595,16 @@
             "rid": "win"
           }
         }
+      },
+      "HaybaleApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/HaybaleApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HaybaleApp.Core.dll": {}
+        }
       }
     }
   },
@@ -4681,10 +4691,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "HaybaleApp.Core/1.0.0": {
+      "type": "project",
+      "path": "../HaybaleApp.Core/HaybaleApp.Core.csproj",
+      "msbuildProject": "../HaybaleApp.Core/HaybaleApp.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "HaybaleApp.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.6",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.6"
@@ -4714,7 +4730,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj": {
+              "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -225,7 +225,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj": {
+                "projectPath": "D:\\_saleem\\paid\\HaybaleApp\\HaybaleApp.Core\\HaybaleApp.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
