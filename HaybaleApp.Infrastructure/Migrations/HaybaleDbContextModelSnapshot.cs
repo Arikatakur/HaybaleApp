@@ -95,7 +95,7 @@ namespace HaybaleApp.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -114,6 +114,24 @@ namespace HaybaleApp.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Drivers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            FullName = "Driver One",
+                            PhoneNumber = "",
+                            Username = "driver1",
+                            VehicleInfo = ""
+                        },
+                        new
+                        {
+                            Id = 2,
+                            FullName = "Driver Two",
+                            PhoneNumber = "",
+                            Username = "driver2",
+                            VehicleInfo = ""
+                        });
                 });
 
             modelBuilder.Entity("HaybaleApp.Core.Entities.HaybaleOrder", b =>

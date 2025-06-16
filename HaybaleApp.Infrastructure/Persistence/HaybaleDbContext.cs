@@ -22,5 +22,10 @@ public class HaybaleDbContext : DbContext
         modelBuilder.Entity<HaybaleOrder>().ToTable("HaybaleOrders");
         modelBuilder.Entity<Customer>().ToTable("Customers");
         modelBuilder.Entity<ChangeLog>().ToTable("ChangeLogs");
+        
+        modelBuilder.Entity<Driver>().HasData(
+        new Driver { Id = 1, FullName = "Driver One", Username = "driver1" },
+        new Driver { Id = 2, FullName = "Driver Two", Username = "driver2" });
+        
     }
 }
