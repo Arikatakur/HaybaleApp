@@ -18,12 +18,22 @@ public class HaybaleOrderController : ControllerBase
         _context = context;
     }
 
+
     // GET: api/haybaleorder
     [Authorize(Roles = "Driver,Admin")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<HaybaleOrder>>> GetOrders()
     {
-        return await _context.HaybaleOrders.Include(o => o.Driver).ToListAsync();
+        if (User.IsInRole("Driver"))
+        {
+            var driverId = await GetCurrentDriverIdAsync();
+            return await _context.HaybaleOrders
+                .Where(o => o.DriverId == driverId)
+                .Include(o => o.Driver)
+                .ToListAsync();
+        }
+
+        return await _context.HaybaleOrders.Include(o => o.Driver).ToListAsync(); // admin
     }
 
     // GET: api/haybaleorder/5
@@ -56,6 +66,13 @@ public class HaybaleOrderController : ControllerBase
 
         var existing = await _context.HaybaleOrders.AsNoTracking().FirstOrDefaultAsync(o => o.Id == id);
         if (existing == null) return NotFound();
+
+        if (User.IsInRole("Driver"))
+        {
+            var driverId = await GetCurrentDriverIdAsync();
+            if (existing.DriverId != driverId)
+                return Forbid("You are not allowed to edit orders that are not yours.");
+        }
 
         // Log each field change
         if (existing.Price != updated.Price)
@@ -99,6 +116,7 @@ public class HaybaleOrderController : ControllerBase
         return NoContent();
     }
 
+
     // Private change log recorder
     private async Task LogChange(string username, string action, string entity, string field, string? oldValue, string? newValue, string? notes = null)
     {
@@ -117,4 +135,11 @@ public class HaybaleOrderController : ControllerBase
         _context.ChangeLogs.Add(log);
         await _context.SaveChangesAsync();
     }
+
+    private async Task<int?> GetCurrentDriverIdAsync()
+{
+    var username = User?.Identity?.Name;
+    var driver = await _context.Drivers.FirstOrDefaultAsync(d => d.Username == username);
+    return driver?.Id;
+}
 }
