@@ -42,6 +42,9 @@ builder.Services.AddSwaggerGen(c =>
             Array.Empty<string>()
         }
     });
+    var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    c.IncludeXmlComments(xmlPath);
 });
 
 builder.Services.AddDbContext<HaybaleDbContext>(options =>
@@ -70,6 +73,13 @@ builder.Services.AddAuthentication(options =>
 
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<HaybaleDbContext>();
+    db.Database.Migrate(); // Applies any pending migrations
+    SeedData.Initialize(db);
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
