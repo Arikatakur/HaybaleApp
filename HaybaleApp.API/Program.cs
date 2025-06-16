@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<HaybaleDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-var jwtKey = builder.Configuration["Jwt:Key"] ?? "this_is_a_dev_secret_key_123";
+var jwtKey = builder.Configuration["Jwt:Key"] ?? "this_is_a_very_secure_dev_key_123456!";
 var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "HaybaleApp";
 
 builder.Services.AddAuthentication(options =>
