@@ -16,6 +16,26 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<HaybaleDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+var jwtKey = builder.Configuration["Jwt:Key"] ?? "this_is_a_dev_secret_key_123";
+var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "HaybaleApp";
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = false,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtIssuer,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
+    };
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -26,3 +46,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
+app.UseAuthorization(); 
+
+app.MapControllers();
