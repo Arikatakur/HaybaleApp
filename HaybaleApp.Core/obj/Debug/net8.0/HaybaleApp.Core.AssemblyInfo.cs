@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HaybaleApp.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84ec0db6a06688812e2df6c788e1f24257c9d5a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+715d9ab5268204bd9351a348d5dc0466e6d2995e")]
 [assembly: System.Reflection.AssemblyProductAttribute("HaybaleApp.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HaybaleApp.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

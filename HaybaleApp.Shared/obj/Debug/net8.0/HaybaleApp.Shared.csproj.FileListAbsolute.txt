@@ -9,3 +9,15 @@ C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\HaybaleApp.
 C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\refint\HaybaleApp.Shared.dll
 C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\HaybaleApp.Shared.pdb
 C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\ref\HaybaleApp.Shared.dll
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\bin\Debug\net8.0\HaybaleApp.Shared.deps.json
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\bin\Debug\net8.0\HaybaleApp.Shared.dll
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\bin\Debug\net8.0\HaybaleApp.Shared.pdb
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\HaybaleApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\HaybaleApp.Shared.AssemblyInfoInputs.cache
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\HaybaleApp.Shared.AssemblyInfo.cs
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\HaybaleApp.Shared.csproj.CoreCompileInputs.cache
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\HaybaleApp.Shared.sourcelink.json
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\HaybaleApp.Shared.dll
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\refint\HaybaleApp.Shared.dll
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\HaybaleApp.Shared.pdb
+D:\_saleem\paid\HaybaleApp\HaybaleApp.Shared\obj\Debug\net8.0\ref\HaybaleApp.Shared.dll
