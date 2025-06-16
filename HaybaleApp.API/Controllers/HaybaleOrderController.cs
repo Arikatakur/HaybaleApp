@@ -43,46 +43,45 @@ public class HaybaleOrderController : ControllerBase
     {
         _context.HaybaleOrders.Add(order);
         await _context.SaveChangesAsync();
-        await LogChange("add", "HaybaleOrder", "Full Order", null, System.Text.Json.JsonSerializer.Serialize(order));
+        await LogChange(User?.Identity?.Name ?? "System", "add", "HaybaleOrder", "Full Order", null, System.Text.Json.JsonSerializer.Serialize(order));
         return CreatedAtAction(nameof(GetOrder), new { id = order.Id }, order);
     }
 
     // PUT: api/haybaleorder/5
     [Authorize(Roles = "Driver,Admin")]
     [HttpPut("{id}")]
-public async Task<IActionResult> UpdateOrder(int id, HaybaleOrder updated)
-{
-    if (id != updated.Id) return BadRequest();
+    public async Task<IActionResult> UpdateOrder(int id, HaybaleOrder updated)
+    {
+        if (id != updated.Id) return BadRequest();
 
-    var existing = await _context.HaybaleOrders.AsNoTracking().FirstOrDefaultAsync(o => o.Id == id);
-    if (existing == null) return NotFound();
+        var existing = await _context.HaybaleOrders.AsNoTracking().FirstOrDefaultAsync(o => o.Id == id);
+        if (existing == null) return NotFound();
 
-    // Log each field change
-    if (existing.Price != updated.Price)
-        await LogChange("edit", "HaybaleOrder", "Price", existing.Price.ToString(), updated.Price.ToString());
+        // Log each field change
+        if (existing.Price != updated.Price)
+            await LogChange(User?.Identity?.Name ?? "System", "edit", "HaybaleOrder", "Price", existing.Price.ToString(), updated.Price.ToString());
 
-    if (existing.Status != updated.Status)
-        await LogChange("edit", "HaybaleOrder", "Status", existing.Status, updated.Status);
+        if (existing.Status != updated.Status)
+            await LogChange(User?.Identity?.Name ?? "System", "edit", "HaybaleOrder", "Status", existing.Status, updated.Status);
 
-    if (existing.Description != updated.Description)
-        await LogChange("edit", "HaybaleOrder", "Description", existing.Description, updated.Description);
+        if (existing.Description != updated.Description)
+            await LogChange(User?.Identity?.Name ?? "System", "edit", "HaybaleOrder", "Description", existing.Description, updated.Description);
 
-    if (existing.Weight != updated.Weight)
-        await LogChange("edit", "HaybaleOrder", "Weight", existing.Weight.ToString(), updated.Weight.ToString());
+        if (existing.Weight != updated.Weight)
+            await LogChange(User?.Identity?.Name ?? "System", "edit", "HaybaleOrder", "Weight", existing.Weight.ToString(), updated.Weight.ToString());
 
-    if (existing.DeliveryTime != updated.DeliveryTime)
-        await LogChange("edit", "HaybaleOrder", "DeliveryTime", existing.DeliveryTime.ToString("s"), updated.DeliveryTime.ToString("s"));
+        if (existing.DeliveryTime != updated.DeliveryTime)
+            await LogChange(User?.Identity?.Name ?? "System", "edit", "HaybaleOrder", "DeliveryTime", existing.DeliveryTime.ToString("s"), updated.DeliveryTime.ToString("s"));
 
-    if (existing.DriverId != updated.DriverId)
-        await LogChange("edit", "HaybaleOrder", "DriverId", existing.DriverId.ToString(), updated.DriverId.ToString());
+        if (existing.DriverId != updated.DriverId)
+            await LogChange(User?.Identity?.Name ?? "System", "edit", "HaybaleOrder", "DriverId", existing.DriverId.ToString(), updated.DriverId.ToString());
 
-    // Apply update
-    _context.Entry(updated).State = EntityState.Modified;
-    await _context.SaveChangesAsync();
+        // Apply update
+        _context.Entry(updated).State = EntityState.Modified;
+        await _context.SaveChangesAsync();
 
-    return NoContent();
-}
-
+        return NoContent();
+    }
 
     // DELETE: api/haybaleorder/5
     [Authorize(Roles = "Admin")]
@@ -95,15 +94,17 @@ public async Task<IActionResult> UpdateOrder(int id, HaybaleOrder updated)
         _context.HaybaleOrders.Remove(order);
         await _context.SaveChangesAsync();
 
+        await LogChange(User?.Identity?.Name ?? "System", "delete", "HaybaleOrder", "OrderId", id.ToString(), null);
+
         return NoContent();
     }
 
-    [Authorize(Roles = "Admin")]
-    private async Task LogChange(string action, string entity, string field, string? oldValue, string? newValue, string? notes = null)
+    // Private change log recorder
+    private async Task LogChange(string username, string action, string entity, string field, string? oldValue, string? newValue, string? notes = null)
     {
         var log = new ChangeLog
         {
-            Username = User?.Identity?.Name ?? "System",
+            Username = username,
             Action = action,
             TargetEntity = entity,
             FieldChanged = field,
@@ -116,5 +117,4 @@ public async Task<IActionResult> UpdateOrder(int id, HaybaleOrder updated)
         _context.ChangeLogs.Add(log);
         await _context.SaveChangesAsync();
     }
-
 }
