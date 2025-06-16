@@ -103,6 +103,10 @@ namespace HaybaleApp.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("VehicleInfo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
