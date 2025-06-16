@@ -1,0 +1,11 @@
+C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Application\bin\Debug\net8.0\HaybaleApp.Application.deps.json
+C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Application\bin\Debug\net8.0\HaybaleApp.Application.dll
+C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Application\bin\Debug\net8.0\HaybaleApp.Application.pdb
+C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Application\obj\Debug\net8.0\HaybaleApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Application\obj\Debug\net8.0\HaybaleApp.Application.AssemblyInfoInputs.cache
+C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Application\obj\Debug\net8.0\HaybaleApp.Application.AssemblyInfo.cs
+C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Application\obj\Debug\net8.0\HaybaleApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Application\obj\Debug\net8.0\HaybaleApp.Application.dll
+C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Application\obj\Debug\net8.0\refint\HaybaleApp.Application.dll
+C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Application\obj\Debug\net8.0\HaybaleApp.Application.pdb
+C:\Users\salee\Desktop\HaybaleApp\HaybaleApp.Application\obj\Debug\net8.0\ref\HaybaleApp.Application.dll

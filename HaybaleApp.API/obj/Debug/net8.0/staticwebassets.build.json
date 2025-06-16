@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3tL6sfhecCJMjY1aEQw4bXnnJgeVxfB6JGyCoUI5UwY=",
+  "Source": "HaybaleApp.API",
+  "BasePath": "_content/HaybaleApp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
